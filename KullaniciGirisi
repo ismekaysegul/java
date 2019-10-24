@@ -15,44 +15,44 @@ public class KullaniciGirisi {
 		
 		
 		System.out.println("***********************************");
-		System.out.println("Hoşgeldiniz...");
+		System.out.println("HoÅŸgeldiniz...");
 		System.out.println("***********************************");
 		
 		
 		while(true) {
 			
-			System.out.println("Kullanıcı adını giriniz:  ");
+			System.out.println("KullanÄ±cÄ± adÄ±nÄ± giriniz:  ");
 			String girilenKullanici = scanner.nextLine();
 			System.out.println("Parola giriniz:  ");
 			String girilenParola = scanner.nextLine();
 			
 			if (girilenKullanici.equals(kullanici) && girilenParola.equals(parola)) {
 				
-				System.out.println("Başarıyla giriş yaptınız. Hoşgaeldiniz "+kullanici);
+				System.out.println("BaÅŸarÄ±yla giriÅŸ yaptÄ±nÄ±z. HoÅŸgaeldiniz "+kullanici);
 				break;
 				
 			}  else if(girilenKullanici.equals(kullanici) && !girilenParola.equals(parola)) {
 				
-				System.out.println("Parolanız yanlış...");
+				System.out.println("ParolanÄ±z yanlÄ±ÅŸ...");
 				girisHakki--;
-				System.out.println("Kalan giriş hakkı: "+girisHakki);
+				System.out.println("Kalan giriÅŸ hakkÄ±: "+girisHakki);
 				
 			}   else if(!girilenKullanici.equals(kullanici) && girilenParola.equals(parola)) {
 				
-				System.out.println("Kullanıcı adınız yanlış...");
+				System.out.println("KullanÄ±cÄ± adÄ±nÄ±z yanlÄ±ÅŸ...");
 				girisHakki--;
-				System.out.println("Kalan giriş hakkı: "+girisHakki);
+				System.out.println("Kalan giriÅŸ hakkÄ±: "+girisHakki);
 				
 			}   else  {
-				System.out.println("Kullanıcı adı ve parola yanlış..");
+				System.out.println("KullanÄ±cÄ± adÄ± ve parola yanlÄ±ÅŸ..");
 				girisHakki--;
-				System.out.println("Kalan giriş hakkı: "+girisHakki);
+				System.out.println("Kalan giriÅŸ hakkÄ±: "+girisHakki);
 				
 			} 
 			
 			if(girisHakki == 0) {
 				
-				System.out.println("3 kez başarısız giriş yaptınız. Programdan çıkılıyor...");
+				System.out.println("3 kez baÅŸarÄ±sÄ±z giriÅŸ yaptÄ±nÄ±z. Programdan Ã§Ä±kÄ±lÄ±yor...");
 				break;
 			}
 			
