@@ -7,6 +7,7 @@ public class Hesap {
 
 	public Hesap(String kullaniciAdi, String parola, int bakiye) {
 		this.bakiye = bakiye;
+		this.parola = parola;
 		this.kullaniciAdi = kullaniciAdi;
 	}
 
@@ -43,7 +44,7 @@ public class Hesap {
 		if (bakiye < tutar) {
 			System.out.println("Yetersiz bakiye! Bakiyeniz: " + bakiye);
 		} else if (tutar > 1500) {
-			System.out.println("1500 TL üzeri tutar giremezsiniz!");
+			System.out.println("1500 TL Ã¼zeri tutar giremezsiniz!");
 		} else {
 			bakiye -= tutar;
 			System.out.println("Yeni bakiye = " + bakiye);
